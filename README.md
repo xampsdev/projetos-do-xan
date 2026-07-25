@@ -3,8 +3,6 @@
 Desenvolvedor Front-End focado na criação de interfaces web modernas, responsivas e funcionais.  
 Construo aplicações utilizando JavaScript e tecnologias do ecossistema web com foco em experiência do usuário e boas práticas de desenvolvimento.
 
-🔗 Portfólio: https://xampsdev.github.io/projetos-do-xan/
-
 ---
 
 # Preview
