@@ -62,7 +62,7 @@ Busco oportunidade como **Desenvolvedor Front-End Júnior** para aplicar e expan
 Aplicação web com diversos projetos desenvolvidos durante meus estudos.
 
 🔗 Acessar:  
-https://alexandrexan.github.io/projetos-do-xan/
+https://xampsdev.github.io/projetos-do-xan/
 
 Principais tipos de projetos presentes no portfólio:
 
