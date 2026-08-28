@@ -1,87 +1,43 @@
-# Alexandre Araujo
+# Alexandre (Xan) Araujo | Portfólio Front-end
 
-Desenvolvedor Front-End focado na criação de interfaces web modernas, responsivas e funcionais.  
-Construo aplicações utilizando JavaScript e tecnologias do ecossistema web com foco em experiência do usuário e boas práticas de desenvolvimento.
+Este é o repositório do meu portfólio profissional, desenvolvido para demonstrar minhas capacidades práticas na construção de interfaces web modernas, responsivas e acessíveis.
 
----
-
-# Preview
-
-![preview do projeto](./previa-gif/projetos.gif)
+🔗 **Visualizar o projeto ao vivo:** [https://alexandrexan.github.io/projetos-do-xan/](https://alexandrexan.github.io/projetos-do-xan/)
 
 ---
 
-## Sobre
+## Objetivo do Projeto
 
-Desenvolvedor em formação com foco em Front-End.  
-Meu objetivo é transformar ideias em interfaces funcionais e intuitivas, utilizando tecnologias modernas da web.
+O objetivo deste portfólio não é apenas listar o que eu sei, mas **demonstrar tecnicamente** meu domínio dos fundamentos da web. Em vez de utilizar templates ou frameworks pesados desnecessariamente, optei por construir toda a aplicação utilizando a stack web nativa (Vanilla), garantindo controle total sobre a arquitetura, performance e acessibilidade.
 
-Atualmente estou aprofundando conhecimentos em:
+## Stack Tecnológica
 
-- HTML5
-- CSS3
-- JavaScript
-- TypeScript
-- React
-- Git e GitHub
-- Responsividade
-- Boas práticas de UI
+O projeto foi construído utilizando os fundamentos do Front-end:
 
-Busco oportunidade como **Desenvolvedor Front-End Júnior** para aplicar e expandir essas habilidades em projetos reais.
+*   **HTML5:** Estrutura estritamente semântica.
+*   **CSS3:** Arquitetura Mobile-First, CSS Grid, Flexbox e Custom Properties (variáveis).
+*   **JavaScript (Vanilla):** Lógica modular (Module Pattern), manipulação limpa do DOM e eventos.
 
----
+## Decisões de Arquitetura e Engenharia
 
-## Tecnologias
+Para garantir um código de nível profissional e de fácil manutenção, apliquei os seguintes conceitos:
 
-**Front-End**
+### 1. Acessibilidade (A11y) levada a sério
+*   **Focus Trap no Modal:** Implementação de uma trava de foco via JavaScript para garantir que usuários navegando por teclado (Tab) não interajam com elementos invisíveis atrás do modal quando ele estiver aberto. Ao fechar, o foco é devolvido ao elemento acionador original.
+*   **Navegação por Teclado:** Utilização consistente do pseudo-seletor `:focus-visible` e presença de um `skip-link` para pular diretamente para o conteúdo principal.
 
-- HTML5
-- CSS3
-- JavaScript
-- TypeScript
-- React
+### 2. Responsividade e Performance
+*   **Design Fluido:** Utilização da função `clamp()` do CSS para que a tipografia e os espaçamentos escalem de forma orgânica em qualquer tamanho de tela (do mobile ao monitor ultrawide), reduzindo a dependência excessiva de *media queries*.
+*   **Performance:** Imagens configuradas com o atributo nativo `loading="lazy"` para otimizar o tempo de carregamento inicial (LCP - Largest Contentful Paint).
 
-**Ferramentas**
+### 3. JavaScript Modular
+*   Código JS encapsulado em uma IIFE (Immediately Invoked Function Expression) sob o padrão *Module Pattern*, dividindo responsabilidades claras entre `Core`, `A11y` e `Projects` para evitar poluição do escopo global e facilitar a manutenção.
 
-- Git
-- GitHub
-- VS Code
+## Contato
+Estou aberto a oportunidades como Desenvolvedor Front-end Junior.
 
-**Conceitos**
+Email: xampsbeatz@gmail.com
 
-- Responsividade
-- Layout moderno
-- Estrutura semântica
-- Organização de código
+LinkedIn: linkedin.com/in/alexandreap/
 
----
-
-## Projetos
-
-### Portfólio de Projetos
-Aplicação web com diversos projetos desenvolvidos durante meus estudos.
-
-🔗 Acessar:  
-https://xampsdev.github.io/projetos-do-xan/
-
-Principais tipos de projetos presentes no portfólio:
-
-- Aplicações JavaScript
-- Interfaces responsivas
-- Projetos práticos de estudo
-- Experimentos com UI
-
-Cada projeto foi criado para consolidar conceitos fundamentais do desenvolvimento front-end.
-
----
-
-## Objetivo profissional
-
-Construir experiência prática em desenvolvimento web, participando da criação de interfaces modernas e acessíveis.
-
-Interesse em atuar em:
-
-- Desenvolvimento Front-End
-- Interfaces Web
-- Projetos JavaScript
-- Desenvolvimento de aplicações web
+GitHub: github.com/xampsdev
