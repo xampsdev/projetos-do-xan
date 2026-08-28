@@ -2,7 +2,7 @@
 
 Este é o repositório do meu portfólio profissional, desenvolvido para demonstrar minhas capacidades práticas na construção de interfaces web modernas, responsivas e acessíveis.
 
-🔗 **Visualizar o projeto ao vivo:** [https://alexandrexan.github.io/projetos-do-xan/](https://xampsdev.github.io/projetos-do-xan/)
+🔗 **Visualizar o projeto ao vivo:** [https://xampsdev.github.io/projetos-do-xan/](https://xampsdev.github.io/projetos-do-xan/)
 
 ---
 
