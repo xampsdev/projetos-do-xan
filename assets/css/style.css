@@ -1,0 +1,574 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+
+/* 
+   1. DESIGN TOKENS (Variáveis) - Paleta Fria (Azul, Violeta, Verde)
+    */
+:root {
+  /* Cores de Fundo - Azul Escuro/Noite (Serenidade e Profissionalismo) */
+  --bg-base: #090e17;
+  --bg-surface: #111827;
+  --bg-surface-hover: #1e293b;
+
+  /* Bordas */
+  --border-color: #1e293b;
+  --border-hover: #3b82f6;
+
+  /* Tipografia */
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+
+  /* Cores Frias de Destaque */
+  --accent-blue: #3b82f6; /* Confiança e foco */
+  --accent-blue-hover: #2563eb;
+  --accent-violet: #8b5cf6; /* Harmonia e criatividade */
+  --accent-green: #10b981; /* Equilíbrio e sucesso */
+
+  /* Acentos principais do Layout */
+  --accent-primary: var(--accent-blue);
+  --accent-hover: var(--accent-blue-hover);
+
+  /* Sombras e Raios */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --shadow-modal: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+
+  /* Layout e Espaçamentos (Clamp para fluidez) */
+  --container-max: 1100px;
+  --space-xs: clamp(0.5rem, 1vw, 0.75rem);
+  --space-sm: clamp(0.75rem, 1.5vw, 1rem);
+  --space-md: clamp(1rem, 2vw, 1.5rem);
+  --space-lg: clamp(1.5rem, 3vw, 2rem);
+  --space-xl: clamp(2rem, 5vw, 3.5rem);
+}
+
+/* 
+   2. RESET & BASE
+    */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-main);
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* Tipografia */
+h1,
+h2,
+h3,
+h4,
+.brand-name {
+  font-family: "Space Grotesk", "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-main);
+}
+
+a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+ul {
+  list-style-position: inside;
+}
+
+/* Acessibilidade - Foco Global */
+:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent-primary);
+  color: #fff;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  z-index: 999;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus-visible {
+  top: 10px;
+  outline: none;
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+.small {
+  font-size: 0.875rem;
+}
+
+/* 
+   3. LAYOUT ESTRUTURAL (Mobile First)
+    */
+.wrap {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--space-md) var(--space-md) var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.brand-name {
+  font-size: 1.125rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+nav a {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+nav a:hover,
+nav a.focus-visible {
+  color: var(--text-main);
+}
+
+/* 
+   4. COMPONENTES VISUAIS
+    */
+/* Botões */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.25rem;
+  background: var(--accent-primary);
+  color: #fff;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+  font-family: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+.btn.ghost {
+  background: transparent;
+  color: var(--text-main);
+  border-color: var(--border-color);
+}
+
+.btn.ghost:hover {
+  background: var(--bg-surface-hover);
+  border-color: var(--border-hover);
+}
+
+/* Cards Base */
+.card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.card h2 {
+  font-size: clamp(1.5rem, 3vw, 1.75rem);
+}
+
+/* Hero Section */
+.hero {
+  padding: var(--space-xl) 0 var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: -0.02em;
+  max-width: 18ch;
+}
+
+.hero p {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: var(--text-muted);
+  max-width: 55ch;
+}
+
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+/* Tags e Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  background: var(--bg-base);
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+/* Projetos & Filtros */
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: var(--space-xs) 0 var(--space-sm);
+}
+
+.filter-btn {
+  background: var(--bg-base);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.filter-btn:hover {
+  color: var(--text-main);
+  border-color: var(--accent-primary);
+}
+
+.filter-btn.active {
+  background: var(--accent-primary);
+  color: #fff;
+  border-color: var(--accent-primary);
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+.proj {
+  background: var(--bg-base);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.proj[hidden] {
+  display: none;
+}
+
+.proj.card-hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-4px);
+}
+
+.proj h3 {
+  font-size: 1.125rem;
+}
+
+.tech-badges {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+/* Mapeamento de cores frias para os Badges Técnicos */
+.badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge.html {
+  background: var(--accent-violet);
+}
+
+.badge.css {
+  background: var(--accent-blue);
+}
+
+.badge.js {
+  background: var(--accent-green);
+  color: var(--bg-base); /* Contraste adequado para o verde */
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.details-btn {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.links .tag:hover {
+  border-color: var(--accent-primary);
+  color: var(--text-main);
+}
+
+/* Processo */
+.process-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+.process-item {
+  background: var(--bg-base);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+}
+
+.process-item h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent-violet); /* Harmonia visual na listagem */
+}
+
+/* Links Curiosidades */
+.curiosity-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-xs);
+}
+
+.botao-sc {
+  background: var(--bg-base);
+  border: 1px solid var(--border-color);
+  color: #fff;
+}
+
+.botao-sc:hover {
+  background: var(--bg-base);
+  border-color: var(--accent-blue);
+}
+
+.botao-yt {
+  background: var(--bg-base);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+}
+
+.botao-yt:hover {
+  background: var(--bg-base);
+  border-color: var(--accent-blue);
+}
+
+/* Contato */
+#contato p {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  padding-top: var(--space-md);
+}
+
+/* 
+   5. MODAL
+    */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(9, 14, 23, 0.85); /* Fundo escuro azulado */
+  backdrop-filter: blur(4px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+  z-index: 100;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-modal);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.modal-close {
+  align-self: flex-end;
+  background: var(--bg-base);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modal-close:hover {
+  color: var(--text-main);
+  border-color: var(--accent-blue);
+}
+
+.modal-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: -0.5rem;
+  color: var(--accent-blue);
+}
+
+.modal-card h3 {
+  font-size: 1.1rem;
+  color: var(--text-main);
+}
+
+.modal-card ul {
+  color: var(--text-muted);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-xs);
+}
+
+/* 
+   6. RESPONSIVIDADE (Desktop Additions)
+    */
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--space-sm) var(--space-md);
+  }
+
+  nav {
+    gap: var(--space-md);
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .wrap {
+    padding-top: var(--space-xl);
+  }
+}

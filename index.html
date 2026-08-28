@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio de Alexandre (Xan) Araujo, Front-end Developer Jr. Projetos em HTML, CSS, JavaScript e React com foco em performance, acessibilidade e UX."
+      content="Portfolio de Alexandre (Xan) Araujo, Front-end Developer Jr. Projetos em HTML, CSS, JavaScript com foco em performance, acessibilidade e UX."
     />
     <meta name="robots" content="index,follow" />
     <meta
@@ -20,7 +20,7 @@
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content="Portfolio Alexandre Araujo" />
 
-    <title data-lang-str="title">Alexandre Araujo | Front-end Developer</title>
+    <title>Alexandre Araujo | Front-end Developer</title>
 
     <link
       rel="icon"
@@ -38,173 +38,130 @@
     <meta name="apple-mobile-web-app-title" content="Alexandre Araujo" />
     <link rel="manifest" href="favicon/site.webmanifest" />
 
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/script.js" defer></script>
   </head>
 
   <body>
-    <a class="skip-link" href="#main-content" data-lang-str="skipToContent"
-      >Pular para conteúdo principal</a
-    >
+    <a class="skip-link" href="#main-content">Pular para conteúdo principal</a>
 
     <div class="wrap">
       <header>
         <div class="brand">
-          <div class="logo">
-            <img src="img/aap-foto.jpg" alt="Foto de Alexandre Araujo" />
-          </div>
           <div>
-            <div style="font-weight: 700">Alexandre (Xan) Araujo</div>
-            <div class="small muted" data-lang-str="title">
-              Front-end Developer
-            </div>
+            <div class="brand-name">Alexandre (Xan) Araujo</div>
+            <div class="small muted">Front-end Developer</div>
           </div>
         </div>
 
         <nav aria-label="Navegação principal">
-          <a href="#sobre" data-lang-str="about">Sobre mim</a>
-          <a href="#projetos" data-lang-str="projects">Projetos</a>
-          <a href="#processo" data-lang-str="processTitle">Processo</a>
-          <a href="#curiosidades" data-lang-str="curiosities">Além do Código</a>
-          <a href="#contato" data-lang-str="contact">Contato</a>
+          <a href="#sobre">Sobre mim</a>
+          <a href="#stack">Stack</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#processo">Processo</a>
+          <a href="#curiosidades">Além do Código</a>
+          <a href="#contato">Contato</a>
         </nav>
-
-        <div class="header-actions">
-          <div class="language-buttons">
-            <button
-              type="button"
-              data-lang="pt-br"
-              data-tooltip="Ver o site em Português do Brasil"
-            >
-              PT-BR
-            </button>
-            <button
-              type="button"
-              data-lang="en"
-              data-tooltip="View this site in English"
-            >
-              EN
-            </button>
-            <button
-              type="button"
-              data-lang="es"
-              data-tooltip="Ver este sitio en Español"
-            >
-              ES
-            </button>
-          </div>
-        </div>
       </header>
 
       <main id="main-content">
         <section class="hero">
-          <h1 data-lang-str="heroTitle">
+          <h1>
             Front-end Developer Jr com foco em performance e acessibilidade
           </h1>
-          <p data-lang-str="heroSub">
+          <p>
             Desenvolvo interfaces claras, responsivas e prontas para produção
-            com HTML, CSS, JavaScript e React.
+            com HTML, CSS e JavaScript.
           </p>
           <div class="ctas">
-            <a class="btn" href="#projetos" data-lang-str="heroBtnProjects"
-              >Ver projetos</a
-            >
+            <a class="btn" href="#projetos">Ver projetos</a>
             <a
               class="btn ghost"
               href="cv-xan/cv-alexandre-frontend-v4.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              data-lang-str="heroBtnCV"
               >Visualizar CV</a
             >
-            <a class="btn ghost" href="#contato" data-lang-str="heroBtnContact"
-              >Falar comigo</a
-            >
+            <a class="btn ghost" href="#contato">Falar comigo</a>
           </div>
         </section>
 
         <section class="card" id="sobre">
-          <h2 data-lang-str="about">Sobre mim</h2>
-          <p data-lang-str="aboutText">
-            Sou desenvolvedor Front-end Junior e transformo requisitos em
-            interfaces reutilizáveis, acessíveis e fáceis de manter. Tenho
-            prática com projetos reais de estudo, versionamento com Git/GitHub e
-            foco em entrega incremental com boa comunicação em equipe.
+          <h2>Sobre mim</h2>
+          <p>
+            Sou desenvolvedor Front-end com foco na estruturação de aplicações
+            web responsivas e acessíveis. Transformo requisitos em interfaces
+            interativas utilizando HTML semântico, CSS (Grid/Flexbox) e
+            JavaScript. Tenho prática na manipulação do DOM, consumo de APIs
+            (Promises/JSON) e versionamento de código, priorizando a entrega de
+            soluções com código limpo, manutenção facilitada e excelente
+            experiência para o usuário final.
           </p>
+        </section>
+
+        <section class="card" id="stack">
+          <h2>Stack Técnica</h2>
           <div class="skills">
-            <span class="tag" data-lang-str="skillsHTML">HTML</span>
-            <span class="tag" data-lang-str="skillsCSS">CSS</span>
-            <span class="tag" data-lang-str="skillsJS">JavaScript</span>
-            <span class="tag" data-lang-str="skillsGit">Git, GitHub</span>
-            <span class="tag" data-lang-str="skillsNode">Node.js</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Git, GitHub</span>
+            <span class="tag">APIs / JSON</span>
+            <span class="tag">DOM</span>
           </div>
         </section>
 
         <section class="card" id="projetos">
-          <h2 data-lang-str="projectsTitle">Projetos em destaque</h2>
-          <p class="muted" data-lang-str="projectsSubtitle">
+          <h2>Projetos em destaque</h2>
+          <p class="muted">
             Cada projeto resume Problema, Solução e Resultado para facilitar
             avaliação técnica.
           </p>
 
           <div class="project-filters" aria-label="Filtrar projetos">
-            <button
-              type="button"
-              class="filter-btn active"
-              data-filter="all"
-              data-lang-str="filterAll"
-            >
+            <button type="button" class="filter-btn active" data-filter="all">
               Todos
             </button>
-            <button
-              type="button"
-              class="filter-btn"
-              data-filter="html"
-              data-lang-str="filterHTML"
-            >
+            <button type="button" class="filter-btn" data-filter="html">
               HTML
             </button>
-            <button
-              type="button"
-              class="filter-btn"
-              data-filter="css"
-              data-lang-str="filterCSS"
-            >
+            <button type="button" class="filter-btn" data-filter="css">
               CSS
             </button>
-            <button
-              type="button"
-              class="filter-btn"
-              data-filter="js"
-              data-lang-str="filterJS"
-            >
+            <button type="button" class="filter-btn" data-filter="js">
               JavaScript
             </button>
           </div>
 
           <div class="projects">
-            <article
-              class="proj"
-              data-tech="html css js"
-              data-project="project1"
-            >
-              <h3 data-lang-str="project1Name">Conversor BRL → USD</h3>
-              <p data-lang-str="project1Desc">
-                Problema: conversão manual lenta. Solução: SPA com API e
-                validação. Resultado: conversão rápida e confiável.
+            <article class="proj" data-tech="html css js">
+              <h3>Conversor BRL → USD</h3>
+              <p>
+                Uma aplicação web responsiva para conversão de Real Brasileiro
+                (BRL) para Dólar Americano (USD), utilizando cotação atualizada
+                através de uma API externa.
               </p>
+              <ul class="project-highlights" hidden>
+                <li>
+                  Problema: usuários tinham lentidão e risco de erro na
+                  conversão manual.
+                </li>
+                <li>
+                  Solução: integração com API de câmbio e validação de entrada
+                  em tempo real.
+                </li>
+                <li>
+                  Resultado: fluxo mais rápido, menor erro de entrada e melhor
+                  legibilidade de valores.
+                </li>
+              </ul>
               <div class="tech-badges">
                 <span class="badge html">HTML</span>
                 <span class="badge css">CSS</span>
                 <span class="badge js">JavaScript</span>
               </div>
               <div class="links">
-                <button
-                  class="tag details-btn"
-                  type="button"
-                  data-details
-                  data-lang-str="projectDetailsBtn"
-                >
+                <button class="tag details-btn" type="button" data-details>
                   Detalhes
                 </button>
                 <a
@@ -212,7 +169,6 @@
                   href="https://xampsdev.github.io/conversor-de-moedas/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-lang-str="project1Demo"
                   >Demo</a
                 >
                 <a
@@ -220,35 +176,41 @@
                   href="https://github.com/xampsdev/conversor-de-moedas"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-lang-str="project1Code"
                   >Código</a
                 >
               </div>
             </article>
 
-            <article
-              class="proj"
-              data-tech="html css js"
-              data-project="project2"
-            >
-              <h3 data-lang-str="project2Name">Número Secreto 2.0</h3>
-              <p data-lang-str="project2Desc">
-                Problema: treino de lógica com baixo engajamento. Solução: jogo
-                com feedback imediato. Resultado: experiência interativa e
-                didática.
+            <article class="proj" data-tech="html css js">
+              <h3>Número Secreto 2.0</h3>
+              <p>
+                O jogador precisa descobrir um número secreto gerado
+                aleatoriamente pelo sistema. A cada tentativa, a interface
+                informa se o palpite deve ser maior ou menor, permitindo que o
+                jogador utilize lógica para reduzir as possibilidades até
+                encontrar a resposta correta.
               </p>
+              <ul class="project-highlights" hidden>
+                <li>
+                  Problema: exercícios estáticos não mantinham engajamento
+                  durante o aprendizado.
+                </li>
+                <li>
+                  Solução: jogo com tentativas, comparação de palpites e
+                  feedback instantâneo.
+                </li>
+                <li>
+                  Resultado: interação contínua, prática de lógica e UX mais
+                  dinâmica.
+                </li>
+              </ul>
               <div class="tech-badges">
                 <span class="badge html">HTML</span>
                 <span class="badge css">CSS</span>
                 <span class="badge js">JavaScript</span>
               </div>
               <div class="links">
-                <button
-                  class="tag details-btn"
-                  type="button"
-                  data-details
-                  data-lang-str="projectDetailsBtn"
-                >
+                <button class="tag details-btn" type="button" data-details>
                   Detalhes
                 </button>
                 <a
@@ -256,7 +218,6 @@
                   href="https://xampsdev.github.io/numero-secreto/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-lang-str="project2Demo"
                   >Demo</a
                 >
                 <a
@@ -264,30 +225,40 @@
                   href="https://github.com/xampsdev/numero-secreto"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-lang-str="project2Code"
                   >Código</a
                 >
               </div>
             </article>
 
-            <article class="proj" data-tech="html css" data-project="project3">
-              <h3 data-lang-str="project3Name">Cidade de Mentira</h3>
-              <p data-lang-str="project3Desc">
-                Problema: conteúdo disperso. Solução: layout responsivo e
-                hierarquia visual. Resultado: leitura fluida em desktop e
-                mobile.
+            <article class="proj" data-tech="html css">
+              <h3>Cidade de Mentira</h3>
+              <p>
+                Página estática construída para explorar tipografia como
+                elemento central de interface, com foco em leitura, contraste e
+                impacto visual imediato. A estrutura prioriza hierarquia clara e
+                ritmo, conduzindo o usuário ao longo do conteúdo sem dependência
+                de scripts.
               </p>
+              <ul class="project-highlights" hidden>
+                <li>
+                  Problema: página inicial sem hierarquia clara para guiar
+                  leitura.
+                </li>
+                <li>
+                  Solução: estrutura semântica e layout responsivo orientado por
+                  seções.
+                </li>
+                <li>
+                  Resultado: navegação mais previsível e escaneabilidade melhor
+                  em múltiplas telas.
+                </li>
+              </ul>
               <div class="tech-badges">
                 <span class="badge html">HTML</span>
                 <span class="badge css">CSS</span>
               </div>
               <div class="links">
-                <button
-                  class="tag details-btn"
-                  type="button"
-                  data-details
-                  data-lang-str="projectDetailsBtn"
-                >
+                <button class="tag details-btn" type="button" data-details>
                   Detalhes
                 </button>
                 <a
@@ -295,7 +266,6 @@
                   href="https://alexandrexan.github.io/projeto-cidade-de-mentira/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-lang-str="project3Demo"
                   >Demo</a
                 >
                 <a
@@ -303,34 +273,39 @@
                   href="https://github.com/alexandrexan/projeto-cidade-de-mentira"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-lang-str="project3Code"
                   >Código</a
                 >
               </div>
             </article>
 
-            <article
-              class="proj"
-              data-tech="html css js"
-              data-project="project4"
-            >
-              <h3 data-lang-str="project4Name">Mika Pets</h3>
-              <p data-lang-str="project4Desc">
-                Problema: captar clientes com clareza. Solução: landing page com
-                CTA forte. Resultado: jornada objetiva para contato.
+            <article class="proj" data-tech="html css js">
+              <h3>Mika Pets</h3>
+              <p>
+                Landing page institucional para serviços de hospedagem e
+                cuidados com pets, desenvolvida com HTML, CSS e JavaScript puro,
+                com foco em UI/UX, responsividade e interações dinâmicas.
               </p>
+              <ul class="project-highlights" hidden>
+                <li>
+                  Problema: comunicação pouco objetiva para serviços e proposta
+                  de valor.
+                </li>
+                <li>
+                  Solução: landing page com CTA claro, seções diretas e
+                  prioridade mobile.
+                </li>
+                <li>
+                  Resultado: jornada de contato simplificada e melhor
+                  entendimento do serviço.
+                </li>
+              </ul>
               <div class="tech-badges">
                 <span class="badge html">HTML</span>
                 <span class="badge css">CSS</span>
                 <span class="badge js">JavaScript</span>
               </div>
               <div class="links">
-                <button
-                  class="tag details-btn"
-                  type="button"
-                  data-details
-                  data-lang-str="projectDetailsBtn"
-                >
+                <button class="tag details-btn" type="button" data-details>
                   Detalhes
                 </button>
                 <a
@@ -338,7 +313,6 @@
                   href="https://alexandrexan.github.io/mika-pets/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-lang-str="project4Demo"
                   >Demo</a
                 >
                 <a
@@ -346,74 +320,90 @@
                   href="https://github.com/xampsdev/mika-pets"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-lang-str="project4Code"
                   >Código</a
                 >
               </div>
             </article>
 
-            <article class="proj" data-tech="html css" data-project="project5">
-              <h3 data-lang-str="project5Name">Projeto Android</h3>
-              <p data-lang-str="project5Desc">
-                Problema: página longa sem organização. Solução: seções e
-                composição visual consistente. Resultado: navegação simples e
-                escaneável.
+            <article class="proj" data-tech="html css js">
+              <h3>Corre+</h3>
+              <p>
+                A proposta é criar uma plataforma que reúna informações úteis
+                para corredores em um único ambiente, permitindo futuramente
+                consultar, comparar e analisar tênis de corrida e outros dados
+                relacionados à performance.
               </p>
-              <div class="tech-badges">
-                <span class="badge html">HTML</span>
-                <span class="badge css">CSS</span>
-              </div>
-              <div class="links">
-                <button
-                  class="tag details-btn"
-                  type="button"
-                  data-details
-                  data-lang-str="projectDetailsBtn"
-                >
-                  Detalhes
-                </button>
-                <a
-                  class="tag link-animado"
-                  href="https://alexandrexan.github.io/projeto-android/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-lang-str="project5Demo"
-                  >Demo</a
-                >
-                <a
-                  class="tag"
-                  href="https://github.com/alexandrexan/projeto-android"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-lang-str="project5Code"
-                  >Código</a
-                >
-              </div>
-            </article>
-
-            <article
-              class="proj"
-              data-tech="html css js"
-              data-project="project6"
-            >
-              <h3 data-lang-str="project6Name">XAMPSBEATZ</h3>
-              <p data-lang-str="project6Desc">
-                Problema: divulgar portfólio musical com identidade própria.
-                Solução: experiência visual minimalista. Resultado: descoberta
-                rápida dos trabalhos.
-              </p>
+              <ul class="project-highlights" hidden>
+                <li>
+                  Problema: Informações sobre tênis de corrida estão dispersas,
+                  dificultando a comparação entre modelos e a escolha de um
+                  calçado adequado para diferentes tipos de corrida.
+                </li>
+                <li>
+                  Solução: Criação do CORRE+, uma plataforma que organiza dados
+                  técnicos de tênis e utiliza critérios de corrida para
+                  facilitar a análise e comparação entre modelos.
+                </li>
+                <li>
+                  Resultado: Desenvolvimento de uma interface responsiva e
+                  orientada a dados, criada como projeto prático de Front-End e
+                  em constante evolução durante a fase de testes.
+                </li>
+              </ul>
               <div class="tech-badges">
                 <span class="badge html">HTML</span>
                 <span class="badge css">CSS</span>
                 <span class="badge js">JavaScript</span>
               </div>
               <div class="links">
-                <button
-                  class="tag details-btn"
-                  type="button"
-                  data-details
-                  data-lang-str="projectDetailsBtn"
+                <button class="tag details-btn" type="button" data-details>
+                  Detalhes
+                </button>
+                <a
+                  class="tag link-animado"
+                  href="https://xampsdev.github.io/Corre-/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Demo</a
                 >
+                <a
+                  class="tag"
+                  href="https://github.com/xampsdev/Corre-"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Código</a
+                >
+              </div>
+            </article>
+
+            <article class="proj" data-tech="html css js">
+              <h3>XAMPSBEATZ</h3>
+              <p>
+                Problema: divulgar portfólio musical com identidade própria.
+                Solução: experiência visual minimalista. Resultado: descoberta
+                rápida dos trabalhos.
+              </p>
+              <ul class="project-highlights" hidden>
+                <li>
+                  Problema: portfólio precisava reforçar marca pessoal sem
+                  poluição visual.
+                </li>
+                <li>
+                  Solução: interface minimalista com foco em navegação rápida e
+                  destaque do conteúdo.
+                </li>
+                <li>
+                  Resultado: experiência fluida e melhor descoberta dos beats
+                  publicados.
+                </li>
+              </ul>
+              <div class="tech-badges">
+                <span class="badge html">HTML</span>
+                <span class="badge css">CSS</span>
+                <span class="badge js">JavaScript</span>
+              </div>
+              <div class="links">
+                <button class="tag details-btn" type="button" data-details>
                   Detalhes
                 </button>
                 <a
@@ -421,7 +411,6 @@
                   href="https://alexandrexan.github.io/xampsbeatz/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-lang-str="project6Demo"
                   >Demo</a
                 >
                 <a
@@ -429,7 +418,6 @@
                   href="https://github.com/xampsdev/xampsbeatz"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-lang-str="project6Code"
                   >Código</a
                 >
               </div>
@@ -438,25 +426,25 @@
         </section>
 
         <section class="card" id="processo">
-          <h2 data-lang-str="processTitle">Processo</h2>
+          <h2>Processo</h2>
           <div class="process-grid">
             <article class="process-item">
-              <h3 data-lang-str="processStep1Title">1. Planejamento</h3>
-              <p data-lang-str="processStep1Text">
+              <h3>1. Planejamento</h3>
+              <p>
                 Defino o problema, os objetivos do projeto e o público-alvo para
                 orientar decisões técnicas desde o início.
               </p>
             </article>
             <article class="process-item">
-              <h3 data-lang-str="processStep2Title">2. Construção</h3>
-              <p data-lang-str="processStep2Text">
+              <h3>2. Construção</h3>
+              <p>
                 Implemento estrutura responsiva, componentes reutilizáveis e
                 código limpo.
               </p>
             </article>
             <article class="process-item">
-              <h3 data-lang-str="processStep3Title">3. Refino e Publicação</h3>
-              <p data-lang-str="processStep3Text">
+              <h3>3. Refino e Publicação</h3>
+              <p>
                 Valido acessibilidade, performance e detalhes visuais para
                 entrega profissional.
               </p>
@@ -465,8 +453,8 @@
         </section>
 
         <section class="card" id="curiosidades">
-          <h2 data-lang-str="curiosities">Além do Código</h2>
-          <p data-lang-str="curiositiesText">
+          <h2>Além do Código</h2>
+          <p>
             Produzo música nas horas vagas e aplico o mesmo cuidado com ritmo,
             consistência e detalhe.
           </p>
@@ -476,7 +464,6 @@
               href="https://soundcloud.com/xampsbeatz"
               target="_blank"
               rel="noopener noreferrer"
-              data-lang-str="soundcloud"
               >Ouvir no SoundCloud</a
             >
             <a
@@ -484,15 +471,14 @@
               href="https://www.youtube.com/@xampsbeatz"
               target="_blank"
               rel="noopener noreferrer"
-              data-lang-str="youtube"
               >Ouvir no YouTube</a
             >
           </div>
         </section>
 
         <section class="card" id="contato">
-          <h2 data-lang-str="contact">Contato</h2>
-          <p class="muted" data-lang-str="contactLead">
+          <h2>Contato</h2>
+          <p class="muted">
             Aberto para oportunidades de Front-end Junior em formato remoto ou
             híbrido.
           </p>
@@ -512,10 +498,10 @@
           <p>
             <strong>GitHub:</strong>
             <a
-              href="https://github.com/alexandrexan"
+              href="https://github.com/xampsdev"
               target="_blank"
               rel="noopener noreferrer"
-              >github.com/alexandrexan</a
+              >github.com/xampsdev</a
             >
           </p>
         </section>
@@ -524,9 +510,7 @@
       <footer>
         <div>
           <span id="year"></span>
-          <span data-lang-str="footerSuffix"
-            >Alexandre (Xan) Araujo - Front-end Developer</span
-          >
+          <span>Alexandre (Xan) Araujo - Front-end Developer</span>
         </div>
       </footer>
     </div>
@@ -542,13 +526,13 @@
           class="modal-close"
           id="modal-close"
           type="button"
-          data-lang-str="modalClose"
+          aria-label="Fechar modal"
         >
           Fechar
         </button>
-        <h3 id="modal-title"></h3>
+        <h2 id="modal-title"></h2>
         <p id="modal-description"></p>
-        <h4 data-lang-str="modalHighlights">Destaques técnicos</h4>
+        <h3>Destaques técnicos</h3>
         <ul id="modal-highlights"></ul>
         <div class="modal-actions">
           <a
@@ -557,7 +541,6 @@
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            data-lang-str="project1Demo"
             >Demo</a
           >
           <a
@@ -566,7 +549,6 @@
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            data-lang-str="project1Code"
             >Código</a
           >
         </div>
