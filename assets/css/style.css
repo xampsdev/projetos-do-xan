@@ -225,6 +225,47 @@ nav a.focus-visible {
   border-color: var(--border-hover);
 }
 
+/* Estrutura base da imagem */
+.proj-image {
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  /* Estado inicial: oculto (altura 0) */
+  max-height: 0;
+  opacity: 0;
+  margin-bottom: 0;
+  transition:
+    max-height 0.35s ease,
+    opacity 0.3s ease,
+    margin 0.3s ease;
+}
+
+.proj-image img {
+  width: 100%;
+  height: 160px; /* Altura fixa para manter o padrão */
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+/* Comportamento para Desktop (Mouse) */
+@media (hover: hover) {
+  .proj:hover .proj-image,
+  .proj:focus-within .proj-image {
+    max-height: 160px;
+    opacity: 1;
+    margin-bottom: var(--space-sm);
+  }
+}
+
+/* Comportamento para Mobile (Touch) */
+@media (hover: none) {
+  .proj-image {
+    max-height: 160px;
+    opacity: 1;
+    margin-bottom: var(--space-sm);
+  }
+}
+
 /* Cards Base */
 .card {
   background: var(--bg-surface);
