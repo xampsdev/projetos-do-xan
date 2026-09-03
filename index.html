@@ -5,22 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio de Alexandre (Xan) Araujo, Front-end Developer Jr. Projetos em HTML, CSS, JavaScript com foco em performance, acessibilidade e UX."
+      content="Portfolio de Alexandre (Xan) Araujo, Front-end Developer Jr."
     />
     <meta name="robots" content="index,follow" />
-    <meta
-      property="og:title"
-      content="Alexandre (Xan) Araujo | Front-end Developer Jr"
-    />
-    <meta
-      property="og:description"
-      content="Portfolio com projetos, stack tecnica e contato direto para oportunidades em Front-end."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="pt_BR" />
-    <meta property="og:site_name" content="Portfolio Alexandre Araujo" />
-
     <title>Alexandre Araujo | Front-end Developer</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       rel="icon"
@@ -30,14 +27,6 @@
     />
     <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
     <link rel="shortcut icon" href="favicon/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon/apple-touch-icon.png"
-    />
-    <meta name="apple-mobile-web-app-title" content="Alexandre Araujo" />
-    <link rel="manifest" href="favicon/site.webmanifest" />
-
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/script.js" defer></script>
   </head>
@@ -48,19 +37,18 @@
     <div class="wrap">
       <header>
         <div class="brand">
-          <div>
-            <div class="brand-name">Alexandre (Xan) Araujo</div>
-            <div class="small muted">Front-end Developer</div>
-          </div>
+          <span class="brand-name">Alexandre (Xan).dev</span>
         </div>
-
         <nav aria-label="Navegação principal">
-          <a href="#sobre">Sobre mim</a>
-          <a href="#stack">Stack</a>
+          <a href="#sobre">Sobre</a>
           <a href="#projetos">Projetos</a>
-          <a href="#processo">Processo</a>
-          <a href="#curiosidades">Além do Código</a>
           <a href="#contato">Contato</a>
+          <a
+            class="btn ghost"
+            href="cv-xan/Curriculo - Alexandre Araujo - Front-End (PT-BR).pdf"
+            target="_blank"
+            >Currículo</a
+          >
         </nav>
       </header>
 
@@ -75,50 +63,91 @@
           </p>
           <div class="ctas">
             <a class="btn" href="#projetos">Ver projetos</a>
-            <a
-              class="btn ghost"
-              href="cv-xan/cv-alexandre-frontend-v4.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Visualizar CV</a
-            >
             <a class="btn ghost" href="#contato">Falar comigo</a>
           </div>
         </section>
 
-        <section class="card" id="sobre">
-          <h2>Sobre mim</h2>
-          <p>
-            Sou desenvolvedor Front-end com foco na estruturação de aplicações
-            web responsivas e acessíveis. Transformo requisitos em interfaces
-            interativas utilizando HTML semântico, CSS (Grid/Flexbox) e
-            JavaScript. Tenho prática na manipulação do DOM, consumo de APIs
-            (Promises/JSON) e versionamento de código, priorizando a entrega de
-            soluções com código limpo, manutenção facilitada e excelente
-            experiência para o usuário final.
+        <!-- Container Bento Grid Único -->
+        <div class="bento-grid">
+          <section class="card col-8" id="sobre">
+            <h2>Sobre mim</h2>
+            <p class="muted">
+              Sou desenvolvedor Front-end com foco na estruturação de aplicações
+              web responsivas e acessíveis. Transformo requisitos em interfaces
+              interativas utilizando HTML semântico, CSS (Grid/Flexbox) e
+              JavaScript. Tenho prática na manipulação do DOM, consumo de APIs
+              (Promises/JSON) e versionamento de código, priorizando a entrega
+              de soluções com código limpo, manutenção facilitada e excelente
+              experiência para o usuário final.
+            </p>
+          </section>
+
+          <section class="card col-4" id="stack">
+            <h2>Stack Técnica</h2>
+            <div class="skills-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">APIs / JSON</span>
+              <span class="tag">DOM</span>
+              <span class="tag">Git & GitHub</span>
+            </div>
+          </section>
+
+          <section class="card col-6" id="processo">
+            <h2>Processo</h2>
+            <div class="muted">
+              <p>
+                <strong>1. Planejamento:</strong> Defino o problema, objetivos e
+                o público-alvo.
+              </p>
+              <br />
+              <p>
+                <strong>2. Construção:</strong> Estrutura responsiva,
+                componentes limpos.
+              </p>
+              <br />
+              <p>
+                <strong>3. Refino:</strong> Valido acessibilidade e performance
+                para entrega.
+              </p>
+            </div>
+          </section>
+
+          <section class="card col-6" id="curiosidades">
+            <h2>Além do Código</h2>
+            <p class="muted">
+              Produzo música nas horas vagas e aplico o mesmo cuidado com ritmo,
+              consistência e detalhe.
+            </p>
+            <div class="ctas">
+              <a
+                class="btn ghost"
+                href="https://soundcloud.com/xampsbeatz"
+                target="_blank"
+                ><span class="material-symbols-outlined">music_note</span>
+                SoundCloud</a
+              >
+              <a
+                class="btn ghost"
+                href="https://www.youtube.com/@xampsbeatz"
+                target="_blank"
+                ><span class="material-symbols-outlined">play_arrow</span>
+                YouTube</a
+              >
+            </div>
+          </section>
+        </div>
+
+        <section id="projetos">
+          <h2 style="font-size: 2rem; margin-bottom: 0.5rem">
+            Projetos em destaque
+          </h2>
+          <p class="muted mono-text" style="margin-bottom: 1.5rem">
+            Cada projeto resume Problema, Solução e Resultado.
           </p>
-        </section>
 
-        <section class="card" id="stack">
-          <h2>Stack Técnica</h2>
-          <div class="skills">
-            <span class="tag">HTML5</span>
-            <span class="tag">CSS3</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">Git, GitHub</span>
-            <span class="tag">APIs / JSON</span>
-            <span class="tag">DOM</span>
-          </div>
-        </section>
-
-        <section class="card" id="projetos">
-          <h2>Projetos em destaque</h2>
-          <p class="muted">
-            Cada projeto resume Problema, Solução e Resultado para facilitar
-            avaliação técnica.
-          </p>
-
-          <div class="project-filters" aria-label="Filtrar projetos">
+          <div class="project-filters">
             <button type="button" class="filter-btn active" data-filter="all">
               Todos
             </button>
@@ -133,471 +162,254 @@
             </button>
           </div>
 
-          <div class="projects">
-            <article class="proj" data-tech="html css js">
-              <h3>Conversor BRL → USD</h3>
-
-              <div class="proj-image">
-                <img
-                  src="img/conversor-dolar.webp"
-                  alt="Preview do Conversor de Moedas"
-                  loading="lazy"
-                />
+          <div class="projects bento-grid">
+            <article class="card proj" data-tech="html css js">
+              <div class="proj-content">
+                <h2>Conversor BRL → USD</h2>
+                <p class="muted">
+                  Uma aplicação web responsiva para conversão de Real Brasileiro
+                  (BRL) para Dólar Americano (USD), utilizando cotação
+                  atualizada através de uma API externa.
+                </p>
+                <div class="proj-highlights">
+                  <p>
+                    <strong>Problema:</strong> Usuários tinham lentidão e risco
+                    de erro na conversão manual.
+                  </p>
+                  <p>
+                    <strong>Solução:</strong> Integração com API de câmbio e
+                    validação de entrada em tempo real.
+                  </p>
+                  <p>
+                    <strong>Resultado:</strong> Fluxo mais rápido, menor erro de
+                    entrada.
+                  </p>
+                </div>
               </div>
-
-              <p>
-                Uma aplicação web responsiva para conversão de Real Brasileiro
-                (BRL) para Dólar Americano (USD), utilizando cotação atualizada
-                através de uma API externa.
-              </p>
-              <ul class="project-highlights" hidden>
-                <li>
-                  Problema: usuários tinham lentidão e risco de erro na
-                  conversão manual.
-                </li>
-                <li>
-                  Solução: integração com API de câmbio e validação de entrada
-                  em tempo real.
-                </li>
-                <li>
-                  Resultado: fluxo mais rápido, menor erro de entrada e melhor
-                  legibilidade de valores.
-                </li>
-              </ul>
-              <div class="tech-badges">
-                <span class="badge html">HTML</span>
-                <span class="badge css">CSS</span>
-                <span class="badge js">JavaScript</span>
-              </div>
-              <div class="links">
-                <button class="tag details-btn" type="button" data-details>
-                  Detalhes
-                </button>
-                <a
-                  class="tag link-animado"
-                  href="https://xampsdev.github.io/conversor-de-moedas/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Demo</a
-                >
-                <a
-                  class="tag"
-                  href="https://github.com/xampsdev/conversor-de-moedas"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Código</a
-                >
+              <div class="proj-meta">
+                <div class="tech-badges">HTML, CSS, JS</div>
+                <div class="ctas">
+                  <a
+                    class="btn ghost"
+                    href="https://xampsdev.github.io/conversor-de-moedas/"
+                    target="_blank"
+                    >Demo</a
+                  >
+                  <a
+                    class="btn ghost"
+                    href="https://github.com/xampsdev/conversor-de-moedas"
+                    target="_blank"
+                    >Código</a
+                  >
+                </div>
               </div>
             </article>
 
-            <article class="proj" data-tech="html css js">
-              <h3>Número Secreto 2.0</h3>
-
-              <div class="proj-image">
-                <img
-                  src="img/nsecreto.webp"
-                  alt="Preview do Número Secreto 2.0"
-                  loading="lazy"
-                />
+            <article class="card proj" data-tech="html css js">
+              <div class="proj-content">
+                <h2>Número Secreto 2.0</h2>
+                <p class="muted">
+                  O jogador precisa descobrir um número secreto gerado
+                  aleatoriamente pelo sistema através de feedback lógico da
+                  interface.
+                </p>
+                <div class="proj-highlights">
+                  <p>
+                    <strong>Problema:</strong> Exercícios estáticos não
+                    mantinham engajamento.
+                  </p>
+                  <p>
+                    <strong>Solução:</strong> Jogo com tentativas, comparação de
+                    palpites e feedback.
+                  </p>
+                  <p>
+                    <strong>Resultado:</strong> Prática de lógica e UX mais
+                    dinâmica.
+                  </p>
+                </div>
               </div>
-
-              <p>
-                O jogador precisa descobrir um número secreto gerado
-                aleatoriamente pelo sistema. A cada tentativa, a interface
-                informa se o palpite deve ser maior ou menor, permitindo que o
-                jogador utilize lógica para reduzir as possibilidades até
-                encontrar a resposta correta.
-              </p>
-              <ul class="project-highlights" hidden>
-                <li>
-                  Problema: exercícios estáticos não mantinham engajamento
-                  durante o aprendizado.
-                </li>
-                <li>
-                  Solução: jogo com tentativas, comparação de palpites e
-                  feedback instantâneo.
-                </li>
-                <li>
-                  Resultado: interação contínua, prática de lógica e UX mais
-                  dinâmica.
-                </li>
-              </ul>
-              <div class="tech-badges">
-                <span class="badge html">HTML</span>
-                <span class="badge css">CSS</span>
-                <span class="badge js">JavaScript</span>
-              </div>
-              <div class="links">
-                <button class="tag details-btn" type="button" data-details>
-                  Detalhes
-                </button>
-                <a
-                  class="tag link-animado"
-                  href="https://xampsdev.github.io/numero-secreto/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Demo</a
-                >
-                <a
-                  class="tag"
-                  href="https://github.com/xampsdev/numero-secreto"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Código</a
-                >
+              <div class="proj-meta">
+                <div class="tech-badges">HTML, CSS, JS</div>
+                <div class="ctas">
+                  <a
+                    class="btn ghost"
+                    href="https://xampsdev.github.io/numero-secreto/"
+                    target="_blank"
+                    >Demo</a
+                  >
+                  <a
+                    class="btn ghost"
+                    href="https://github.com/xampsdev/numero-secreto"
+                    target="_blank"
+                    >Código</a
+                  >
+                </div>
               </div>
             </article>
 
-            <article class="proj" data-tech="html css">
-              <h3>Cidade de Mentira</h3>
-              <p>
-                Página estática construída para explorar tipografia como
-                elemento central de interface, com foco em leitura, contraste e
-                impacto visual imediato. A estrutura prioriza hierarquia clara e
-                ritmo, conduzindo o usuário ao longo do conteúdo sem dependência
-                de scripts.
-              </p>
-              <ul class="project-highlights" hidden>
-                <li>
-                  Problema: página inicial sem hierarquia clara para guiar
-                  leitura.
-                </li>
-                <li>
-                  Solução: estrutura semântica e layout responsivo orientado por
-                  seções.
-                </li>
-                <li>
-                  Resultado: navegação mais previsível e escaneabilidade melhor
-                  em múltiplas telas.
-                </li>
-              </ul>
-              <div class="tech-badges">
-                <span class="badge html">HTML</span>
-                <span class="badge css">CSS</span>
+            <article class="card proj" data-tech="html css js">
+              <div class="proj-content">
+                <h2>Corre+</h2>
+                <p class="muted">
+                  Plataforma que reúne informações úteis para corredores em um
+                  único ambiente, permitindo consultar e analisar dados de
+                  tênis.
+                </p>
+                <div class="proj-highlights">
+                  <p>
+                    <strong>Problema:</strong> Dados de tênis de corrida muito
+                    dispersos.
+                  </p>
+                  <p>
+                    <strong>Solução:</strong> Plataforma que organiza dados
+                    técnicos e critérios.
+                  </p>
+                  <p>
+                    <strong>Resultado:</strong> Interface orientada a dados em
+                    evolução.
+                  </p>
+                </div>
               </div>
-              <div class="links">
-                <button class="tag details-btn" type="button" data-details>
-                  Detalhes
-                </button>
-                <a
-                  class="tag link-animado"
-                  href="https://alexandrexan.github.io/projeto-cidade-de-mentira/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Demo</a
-                >
-                <a
-                  class="tag"
-                  href="https://github.com/alexandrexan/projeto-cidade-de-mentira"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Código</a
-                >
+              <div class="proj-meta">
+                <div class="tech-badges">HTML, CSS, JS</div>
+                <div class="ctas">
+                  <a
+                    class="btn ghost"
+                    href="https://xampsdev.github.io/Corre-/"
+                    target="_blank"
+                    >Demo</a
+                  >
+                  <a
+                    class="btn ghost"
+                    href="https://github.com/xampsdev/Corre-"
+                    target="_blank"
+                    >Código</a
+                  >
+                </div>
               </div>
             </article>
 
-            <article class="proj" data-tech="html css js">
-              <h3>Mika Pets</h3>
-
-              <div class="proj-image">
-                <img
-                  src="img/mika-pets.webp"
-                  alt="Preview do Mika Pets"
-                  loading="lazy"
-                />
+            <article class="card proj" data-tech="html css js">
+              <div class="proj-content">
+                <h2>XAMPSBEATZ</h2>
+                <p class="muted">
+                  Divulgar portfólio musical com identidade própria através de
+                  uma experiência visual minimalista.
+                </p>
+                <div class="proj-highlights">
+                  <p>
+                    <strong>Problema:</strong> Portfólio precisava reforçar
+                    marca pessoal sem poluição visual.
+                  </p>
+                  <p>
+                    <strong>Solução:</strong> Interface minimalista com foco em
+                    navegação rápida e destaque do conteúdo.
+                  </p>
+                  <p>
+                    <strong>Resultado:</strong> Experiência fluida e melhor
+                    descoberta dos beats publicados.
+                  </p>
+                </div>
               </div>
-
-              <p>
-                Landing page institucional para serviços de hospedagem e
-                cuidados com pets, desenvolvida com HTML, CSS e JavaScript puro,
-                com foco em UI/UX, responsividade e interações dinâmicas.
-              </p>
-              <ul class="project-highlights" hidden>
-                <li>
-                  Problema: comunicação pouco objetiva para serviços e proposta
-                  de valor.
-                </li>
-                <li>
-                  Solução: landing page com CTA claro, seções diretas e
-                  prioridade mobile.
-                </li>
-                <li>
-                  Resultado: jornada de contato simplificada e melhor
-                  entendimento do serviço.
-                </li>
-              </ul>
-              <div class="tech-badges">
-                <span class="badge html">HTML</span>
-                <span class="badge css">CSS</span>
-                <span class="badge js">JavaScript</span>
-              </div>
-              <div class="links">
-                <button class="tag details-btn" type="button" data-details>
-                  Detalhes
-                </button>
-                <a
-                  class="tag link-animado"
-                  href="https://alexandrexan.github.io/mika-pets/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Demo</a
-                >
-                <a
-                  class="tag"
-                  href="https://github.com/xampsdev/mika-pets"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Código</a
-                >
+              <div class="proj-meta">
+                <div class="tech-badges">HTML, CSS, JS</div>
+                <div class="ctas">
+                  <a
+                    class="btn ghost"
+                    href="https://alexandrexan.github.io/xampsbeatz/"
+                    target="_blank"
+                    >Demo</a
+                  >
+                  <a
+                    class="btn ghost"
+                    href="https://github.com/xampsdev/xampsbeatz"
+                    target="_blank"
+                    >Código</a
+                  >
+                </div>
               </div>
             </article>
 
-            <article class="proj" data-tech="html css js">
-              <h3>Corre+</h3>
-
-              <div class="proj-image">
-                <img
-                  src="img/corre.webp"
-                  alt="Preview do Corre+"
-                  loading="lazy"
-                />
+            <article class="card proj" data-tech="html css js">
+              <div class="proj-content">
+                <h2>Mika Pets</h2>
+                <p class="muted">
+                  Landing page institucional para serviços de hospedagem e
+                  cuidados com pets, desenvolvida com HTML, CSS e JavaScript
+                  puro, com foco em UI/UX, responsividade e interações
+                  dinâmicas.
+                </p>
+                <div class="proj-highlights">
+                  <p>
+                    <strong>Problema:</strong> Comunicação pouco objetiva para
+                    serviços e proposta de valor.
+                  </p>
+                  <p>
+                    <strong>Solução:</strong> Landing page com CTA claro, seções
+                    diretas e prioridade mobile.
+                  </p>
+                  <p>
+                    <strong>Resultado:</strong> Jornada de contato simplificada
+                    e melhor entendimento do serviço.
+                  </p>
+                </div>
               </div>
-
-              <p>
-                A proposta é criar uma plataforma que reúna informações úteis
-                para corredores em um único ambiente, permitindo futuramente
-                consultar, comparar e analisar tênis de corrida e outros dados
-                relacionados à performance.
-              </p>
-              <ul class="project-highlights" hidden>
-                <li>
-                  Problema: Informações sobre tênis de corrida estão dispersas,
-                  dificultando a comparação entre modelos e a escolha de um
-                  calçado adequado para diferentes tipos de corrida.
-                </li>
-                <li>
-                  Solução: Criação do CORRE+, uma plataforma que organiza dados
-                  técnicos de tênis e utiliza critérios de corrida para
-                  facilitar a análise e comparação entre modelos.
-                </li>
-                <li>
-                  Resultado: Desenvolvimento de uma interface responsiva e
-                  orientada a dados, criada como projeto prático de Front-End e
-                  em constante evolução durante a fase de testes.
-                </li>
-              </ul>
-              <div class="tech-badges">
-                <span class="badge html">HTML</span>
-                <span class="badge css">CSS</span>
-                <span class="badge js">JavaScript</span>
-              </div>
-              <div class="links">
-                <button class="tag details-btn" type="button" data-details>
-                  Detalhes
-                </button>
-                <a
-                  class="tag link-animado"
-                  href="https://xampsdev.github.io/Corre-/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Demo</a
-                >
-                <a
-                  class="tag"
-                  href="https://github.com/xampsdev/Corre-"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Código</a
-                >
-              </div>
-            </article>
-
-            <article class="proj" data-tech="html css js">
-              <h3>XAMPSBEATZ</h3>
-
-              <div class="proj-image">
-                <img
-                  src="img/xamps.webp"
-                  alt="Preview do xampsbeatz"
-                  loading="lazy"
-                />
-              </div>
-
-              <p>
-                Problema: divulgar portfólio musical com identidade própria.
-                Solução: experiência visual minimalista. Resultado: descoberta
-                rápida dos trabalhos.
-              </p>
-              <ul class="project-highlights" hidden>
-                <li>
-                  Problema: portfólio precisava reforçar marca pessoal sem
-                  poluição visual.
-                </li>
-                <li>
-                  Solução: interface minimalista com foco em navegação rápida e
-                  destaque do conteúdo.
-                </li>
-                <li>
-                  Resultado: experiência fluida e melhor descoberta dos beats
-                  publicados.
-                </li>
-              </ul>
-              <div class="tech-badges">
-                <span class="badge html">HTML</span>
-                <span class="badge css">CSS</span>
-                <span class="badge js">JavaScript</span>
-              </div>
-              <div class="links">
-                <button class="tag details-btn" type="button" data-details>
-                  Detalhes
-                </button>
-                <a
-                  class="tag link-animado"
-                  href="https://alexandrexan.github.io/xampsbeatz/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Demo</a
-                >
-                <a
-                  class="tag"
-                  href="https://github.com/xampsdev/xampsbeatz"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Código</a
-                >
+              <div class="proj-meta">
+                <div class="tech-badges">HTML, CSS, JS</div>
+                <div class="ctas">
+                  <a
+                    class="btn ghost"
+                    href="https://alexandrexan.github.io/mika-pets/#"
+                    target="_blank"
+                    >Demo</a
+                  >
+                  <a
+                    class="btn ghost"
+                    href="https://github.com/xampsdev/mika-pets"
+                    target="_blank"
+                    >Código</a
+                  >
+                </div>
               </div>
             </article>
           </div>
         </section>
 
-        <section class="card" id="processo">
-          <h2>Processo</h2>
-          <div class="process-grid">
-            <article class="process-item">
-              <h3>1. Planejamento</h3>
-              <p>
-                Defino o problema, os objetivos do projeto e o público-alvo para
-                orientar decisões técnicas desde o início.
-              </p>
-            </article>
-            <article class="process-item">
-              <h3>2. Construção</h3>
-              <p>
-                Implemento estrutura responsiva, componentes reutilizáveis e
-                código limpo.
-              </p>
-            </article>
-            <article class="process-item">
-              <h3>3. Refino e Publicação</h3>
-              <p>
-                Valido acessibilidade, performance e detalhes visuais para
-                entrega profissional.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="card" id="curiosidades">
-          <h2>Além do Código</h2>
-          <p>
-            Produzo música nas horas vagas e aplico o mesmo cuidado com ritmo,
-            consistência e detalhe.
-          </p>
-          <div class="curiosity-links">
-            <a
-              class="btn botao-sc"
-              href="https://soundcloud.com/xampsbeatz"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Ouvir no SoundCloud</a
-            >
-            <a
-              class="btn botao-yt"
-              href="https://www.youtube.com/@xampsbeatz"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Ouvir no YouTube</a
-            >
-          </div>
-        </section>
-
-        <section class="card" id="contato">
+        <section
+          class="card"
+          id="contato"
+          style="text-align: center; margin-top: 2rem"
+        >
           <h2>Contato</h2>
           <p class="muted">
             Aberto para oportunidades de Front-end Junior em formato remoto ou
             híbrido.
           </p>
-          <p>
-            <strong>Email:</strong>
-            <a href="mailto:xampsbeatz@gmail.com">xampsbeatz@gmail.com</a>
-          </p>
-          <p>
-            <strong>LinkedIn:</strong>
+          <div class="ctas" style="justify-content: center">
+            <a class="btn ghost" href="mailto:xampsbeatz@gmail.com"
+              ><span class="material-symbols-outlined">mail</span> Email</a
+            >
             <a
+              class="btn ghost"
               href="https://www.linkedin.com/in/alexandreap/"
               target="_blank"
-              rel="noopener noreferrer"
-              >linkedin.com/in/alexandreap/</a
+              ><span class="material-symbols-outlined">link</span> LinkedIn</a
             >
-          </p>
-          <p>
-            <strong>GitHub:</strong>
             <a
+              class="btn ghost"
               href="https://github.com/xampsdev"
               target="_blank"
-              rel="noopener noreferrer"
-              >github.com/xampsdev</a
+              ><span class="material-symbols-outlined">code</span> GitHub</a
             >
-          </p>
+          </div>
         </section>
       </main>
 
       <footer>
-        <div>
-          <span id="year"></span>
-          <span>Alexandre (Xan) Araujo - Front-end Developer</span>
-        </div>
-      </footer>
-    </div>
-
-    <div class="modal" id="project-modal" aria-hidden="true">
-      <div
-        class="modal-card"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="modal-title"
-      >
-        <button
-          class="modal-close"
-          id="modal-close"
-          type="button"
-          aria-label="Fechar modal"
+        <span class="brand-name" style="font-size: 1rem"
+          >© <span id="year"></span> Alexandre (Xan).dev</span
         >
-          Fechar
-        </button>
-        <h2 id="modal-title"></h2>
-        <p id="modal-description"></p>
-        <h3>Destaques técnicos</h3>
-        <ul id="modal-highlights"></ul>
-        <div class="modal-actions">
-          <a
-            id="modal-demo"
-            class="btn"
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Demo</a
-          >
-          <a
-            id="modal-code"
-            class="btn ghost"
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Código</a
-          >
-        </div>
-      </div>
+      </footer>
     </div>
   </body>
 </html>
