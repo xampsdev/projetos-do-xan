@@ -376,3 +376,78 @@ footer {
   font-size: 0.85rem;
   color: var(--text-muted);
 }
+
+/* Ativado somente após a inicialização do JavaScript */
+.has-custom-cursor,
+.has-custom-cursor * {
+  cursor: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  pointer-events: none;
+  visibility: hidden;
+  mix-blend-mode: difference;
+}
+
+.custom-cursor__dot,
+.custom-cursor__ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background: #fff;
+  will-change: transform;
+}
+
+.custom-cursor__dot {
+  width: 7px;
+  height: 7px;
+}
+
+.custom-cursor__ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%; /* Começa redondo */
+  border: 1px solid #fff; /* Borda fina branca */
+  background: transparent; /* Remove o fundo sólido para destacar a borda */
+  width: 34px;
+  height: 34px;
+  opacity: 0.85;
+  will-change: transform, border-radius;
+}
+
+/* Estado sobre links, botões e elementos clicáveis */
+.custom-cursor.is-hovering .custom-cursor__ring {
+  width: 52px;
+  height: 52px;
+  opacity: 0.55;
+}
+
+/* Mantém o cursor nativo para quem reduz animações */
+@media (prefers-reduced-motion: reduce) {
+  .has-custom-cursor,
+  .has-custom-cursor * {
+    cursor: auto;
+  }
+
+  .custom-cursor {
+    display: none;
+  }
+}
+
+/* Desativa em dispositivos touch/mobile */
+@media (pointer: coarse) {
+  .has-custom-cursor,
+  .has-custom-cursor * {
+    cursor: auto;
+  }
+
+  .custom-cursor {
+    display: none;
+  }
+}
