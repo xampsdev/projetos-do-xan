@@ -38,6 +38,6 @@ Estou aberto a oportunidades como Desenvolvedor Front-end Junior.
 
 Email: xampsbeatz@gmail.com
 
-LinkedIn: linkedin.com/in/alexandreap/
+LinkedIn: [linkedin.com/in/alexandreap/](linkedin.com/in/alexandreap/)
 
-GitHub: github.com/xampsdev
+GitHub: [github.com/xampsdev](github.com/xampsdev)
