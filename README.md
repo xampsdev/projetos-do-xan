@@ -1,4 +1,4 @@
-# Alexandre (Xan) Araujo | Portfólio Front-end
+# Alexandre (Xan) Araujo | Portfólio Desenvolvedor Web
 
 Este é o repositório do meu portfólio profissional, desenvolvido para demonstrar minhas capacidades práticas na construção de interfaces web modernas, responsivas e acessíveis.
 
@@ -34,7 +34,7 @@ Para garantir um código de nível profissional e de fácil manutenção, apliqu
 *   Código JS encapsulado em uma IIFE (Immediately Invoked Function Expression) sob o padrão *Module Pattern*, dividindo responsabilidades claras entre `Core`, `A11y` e `Projects` para evitar poluição do escopo global e facilitar a manutenção.
 
 ## Contato
-Estou aberto a oportunidades como Desenvolvedor Front-end Junior.
+Estou aberto a oportunidades como Desenvolvedor Web.
 
 Email: xampsbeatz@gmail.com
 
