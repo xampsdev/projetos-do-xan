@@ -4,7 +4,7 @@ Repositório do meu portfólio profissional, desenvolvido para demonstrar aplica
 
 **Visualizar aplicação online:** [https://xampsdev.github.io/projetos-do-xan/](https://xampsdev.github.io/projetos-do-xan/)
 
-<img width="3840" height="2030" alt="print-porfolio" src="https://github.com/user-attachments/assets/70ce5897-ddfe-434b-9275-44b841f2447a" />
+<img width="100%" height="100%" alt="print-porfolio" src="https://github.com/user-attachments/assets/70ce5897-ddfe-434b-9275-44b841f2447a" />
 
 ---
 
