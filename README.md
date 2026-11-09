@@ -1,43 +1,52 @@
 # Alexandre (Xan) Araujo | Portfólio Desenvolvedor Web
 
-Este é o repositório do meu portfólio profissional, desenvolvido para demonstrar minhas capacidades práticas na construção de interfaces web modernas, responsivas e acessíveis.
+Repositório do meu portfólio profissional, desenvolvido para demonstrar aplicação prática dos fundamentos da web na construção de interfaces modernas, responsivas e acessíveis.
 
-🔗 **Visualizar o projeto ao vivo:** [https://xampsdev.github.io/projetos-do-xan/](https://xampsdev.github.io/projetos-do-xan/)
+**Visualizar aplicação online:** [https://xampsdev.github.io/projetos-do-xan/](https://xampsdev.github.io/projetos-do-xan/)
 
 ---
 
-## Objetivo do Projeto
+## Objetivo
 
-O objetivo deste portfólio não é apenas listar o que eu sei, mas **demonstrar tecnicamente** meu domínio dos fundamentos da web. Em vez de utilizar templates ou frameworks pesados desnecessariamente, optei por construir toda a aplicação utilizando a stack web nativa (Vanilla), garantindo controle total sobre a arquitetura, performance e acessibilidade.
+Demonstrar domínio prático da stack web nativa (Vanilla) na criação de soluções funcionais e de fácil manutenção. O projeto foi construído sem dependência de bibliotecas ou frameworks pesados, garantindo controle estrito sobre desempenho, renderização e acessibilidade.
 
-## Stack Tecnológica
+## Stack Técnica
 
-O projeto foi construído utilizando os fundamentos do Front-end:
-
-*   **HTML5:** Estrutura estritamente semântica.
-*   **CSS3:** Arquitetura Mobile-First, CSS Grid, Flexbox e Custom Properties (variáveis).
-*   **JavaScript (Vanilla):** Lógica modular (Module Pattern), manipulação limpa do DOM e eventos.
+* **HTML5:** Marcação semântica com foco em SEO e leitores de tela.
+* **CSS3:** Metodologia Mobile-First, Bento Grid assimétrico, CSS Grid, Flexbox e Custom Properties (Design Tokens).
+* **JavaScript (ES6+):** Código nativo encapsulado, manipulação limpa do DOM e consumo assíncrono de dados.
 
 ## Decisões de Arquitetura e Engenharia
 
-Para garantir um código de nível profissional e de fácil manutenção, apliquei os seguintes conceitos:
-
-### 1. Acessibilidade (A11y) levada a sério
-*   **Focus Trap no Modal:** Implementação de uma trava de foco via JavaScript para garantir que usuários navegando por teclado (Tab) não interajam com elementos invisíveis atrás do modal quando ele estiver aberto. Ao fechar, o foco é devolvido ao elemento acionador original.
-*   **Navegação por Teclado:** Utilização consistente do pseudo-seletor `:focus-visible` e presença de um `skip-link` para pular diretamente para o conteúdo principal.
+### 1. Acessibilidade (A11y)
+* **Focus Trap no Modal:** Controle estrito de foco via script que aprisiona a navegação por teclado (`Tab` / `Shift + Tab`) no modal de detalhes quando aberto, restaurando o foco ao elemento de origem após o fechamento (`Esc` ou botão).
+* **Navegação por Teclado:** Utilização de `:focus-visible` com contraste calibrado e `skip-link` para atalho direto ao conteúdo principal.
 
 ### 2. Responsividade e Performance
-*   **Design Fluido:** Utilização da função `clamp()` do CSS para que a tipografia e os espaçamentos escalem de forma orgânica em qualquer tamanho de tela (do mobile ao monitor ultrawide), reduzindo a dependência excessiva de *media queries*.
-*   **Performance:** Imagens configuradas com o atributo nativo `loading="lazy"` para otimizar o tempo de carregamento inicial (LCP - Largest Contentful Paint).
+* **Layout Fluido:** Aplicação da função CSS `clamp()` para tipografia e espaçamentos dinâmicos, reduzindo a complexidade de regras de mídia e garantindo adaptação natural de 320px a telas ultrawide.
+* **Otimização de Recursos:** Imagens carregadas sob demanda via atributo nativo `loading="lazy"`.
 
-### 3. JavaScript Modular
-*   Código JS encapsulado em uma IIFE (Immediately Invoked Function Expression) sob o padrão *Module Pattern*, dividindo responsabilidades claras entre `Core`, `A11y` e `Projects` para evitar poluição do escopo global e facilitar a manutenção.
+### 3. Modularização em JavaScript
+* Lógica estruturada sob o padrão **Module Pattern** (IIFE), isolando responsabilidades entre inicialização global (`Core`), acessibilidade (`A11y`) e renderização/filtros (`Projects`), prevenindo poluição do escopo global.
+## Estrutura de Arquivos
 
+```text
+├── assets/
+│   ├── css/
+│   │   └── style.css       # Design tokens, grid e componentes
+│   └── js/
+│       └── script.js      # IIFE com módulos Core, A11y e Projects
+├── favicon/               # Pacote de ícones e manifest
+├── img/                   # Otimizações de imagem locais
+├── index.html             # Marcação semântica principal
+└── README.md              # Documentação técnica
+```
 ## Contato
-Estou aberto a oportunidades como Desenvolvedor Web.
+
+Disponível para atuação como Desenvolvedor Web em regime remoto ou híbrido.
 
 Email: xampsbeatz@gmail.com
 
 LinkedIn: [https://www.linkedin.com/in/alexandreap/](https://www.linkedin.com/in/alexandreap/)
 
-GitHub: [https://github.com/xampsdev](https://github.com/xampsdev)
+GitHub: [github.com/xampsdev](https://github.com/xampsdev)
